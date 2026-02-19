@@ -361,7 +361,8 @@ const GenerateDraft: React.FC<GenerateDraftProps> = ({ templates, onSaveDraft, o
               <select
                 value={selectedTemplateId}
                 onChange={(e) => setSelectedTemplateId(e.target.value)}
-                className="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm shadow-sm transition-all"
+                disabled={!selectedIndustry || !selectedContractType}
+                className="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none text-sm shadow-sm disabled:opacity-50 transition-all"
               >
                 <option value="">-- Select Existing Template --</option>
                 {filteredTemplates.map(t => (
