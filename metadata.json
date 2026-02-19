@@ -1,0 +1,5 @@
+{
+  "name": "EazyCLM",
+  "description": "A sophisticated Contract Lifecycle Management (CLM) platform featuring AI-driven template generation, human-in-the-loop editing, and automated draft creation with dynamic placeholder extraction.",
+  "requestFramePermissions": []
+}
